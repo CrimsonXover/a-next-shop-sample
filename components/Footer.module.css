@@ -114,7 +114,6 @@
   color: #ffffff;
 }
 
-/* Responsive Design */
 @media (min-width: 768px) {
   .container {
     display: grid;
