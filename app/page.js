@@ -36,8 +36,8 @@ function Home() {
 function Home2() {
   const slides = [
     <div className="slide slide1">Slide One</div>,
-    <div className="slide slide1">Slide Two</div>,
-    <div className="slide slide1">Slide Three</div>,
+    <div className="slide slide2">Slide Two</div>,
+    <div className="slide slide3">Slide Three</div>,
   ];
 
   return (

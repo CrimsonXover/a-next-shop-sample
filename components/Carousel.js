@@ -27,7 +27,7 @@ const Carousel = ({ items, autoSlide = false, autoSlideInterval = 3000 }) => {
         const slideInterval = setInterval(nextSlide, autoSlideInterval);
 
         return () => clearInterval(slideInterval);
-    }, [currentIndex]);
+    }, [autoSlide, autoSlideInterval, items.length, nextSlide]);
 
     return (
         <div className="carousel-container">
