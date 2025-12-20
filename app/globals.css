@@ -104,3 +104,26 @@ footer {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
+
+/* ================================================================================================== */
+
+.slide {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.slide1 {
+  background: #ff5733;
+}
+
+.slide2 {
+  background: #33c1ff;
+}
+
+.slide3 {
+  background: #28a745;
+}

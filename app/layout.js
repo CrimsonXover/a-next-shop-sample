@@ -2,9 +2,9 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Card from "../components/Card";
-import cards from "./data/Cards";
-import { CartProvider, useCart } from "@/context/CartContext";
+// import Card from "../components/Card";
+// import cards from "./data/Cards";
+import { CartProvider } from "@/context/CartContext";
 
 
 export default function RootLayout({ children }) {
@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
         <CartProvider>
           <Navbar />
           <main className="page">
-            <div className="grid">
+            {/* <div className="grid">
               {cards.map((item) => (
                 <Card
                   key={item.id}
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
                   image={item.image}
                 />
               ))}
-            </div>
+            </div> */}
             {children}
           </main>
           <Footer />

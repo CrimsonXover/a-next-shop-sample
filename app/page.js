@@ -2,6 +2,7 @@
 import Image from "next/image";
 import ProductCard from "../components/ProductCard";
 import {useState, useEffect} from 'react'
+import Carousel from "../components/Carousel";
 
 const products = [
   { id: 1, name: "Laptop", price: 1200, max: 2, disabled: false },
@@ -9,7 +10,7 @@ const products = [
   { id: 3, name: "Mouse", price: 50, max: 0, disabled: false }
 ];
 
-export default function Home() {
+function Home() {
       const [cart, setCart] = useState ([]);
   
       useEffect(() => {
@@ -31,3 +32,25 @@ export default function Home() {
     </div>
   );
 }
+
+function Home2() {
+  const slides = [
+    <div className="slide slide1">Slide One</div>,
+    <div className="slide slide1">Slide Two</div>,
+    <div className="slide slide1">Slide Three</div>,
+  ];
+
+  return (
+    <main>
+      <h1>Next.js Carousel</h1>
+
+      <Carousel
+        items={slides}
+        autoSlide={true}
+        autoSlideInterval={4000}
+      />
+    </main>
+  );
+}
+
+export default Home2
