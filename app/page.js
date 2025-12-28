@@ -33,24 +33,24 @@ function Home() {
   );
 }
 
-function Home2() {
-  const slides = [
-    <div className="slide slide1">Slide One</div>,
-    <div className="slide slide2">Slide Two</div>,
-    <div className="slide slide3">Slide Three</div>,
-  ];
+// function Home2() {
+//   const slides = [
+//     <div className="slide slide1">Slide One</div>,
+//     <div className="slide slide2">Slide Two</div>,
+//     <div className="slide slide3">Slide Three</div>,
+//   ];
 
-  return (
-    <main>
-      <h1>Next.js Carousel</h1>
+//   return (
+//     <main>
+//       <h1>Next.js Carousel</h1>
 
-      <Carousel
-        items={slides}
-        autoSlide={true}
-        autoSlideInterval={4000}
-      />
-    </main>
-  );
-}
+//       <Carousel
+//         items={slides}
+//         autoSlide={true}
+//         autoSlideInterval={4000}
+//       />
+//     </main>
+//   );
+// }
 
-export default Home2
+export default Home

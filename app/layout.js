@@ -1,10 +1,10 @@
 "use client"
+
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-// import Card from "../components/Card";
-// import cards from "./data/Cards";
 import { CartProvider } from "@/context/CartContext";
+import OnScreenSearch from "@/components/OnScreenSearch";
 
 
 export default function RootLayout({ children }) {
@@ -13,6 +13,7 @@ export default function RootLayout({ children }) {
       <body className="layout">
         <CartProvider>
           <Navbar />
+          <OnScreenSearch />
           <main className="page">
             {/* <div className="grid">
               {cards.map((item) => (
