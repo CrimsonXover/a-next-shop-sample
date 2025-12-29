@@ -12,22 +12,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="layout">
         <CartProvider>
-          <Navbar />
-          <OnScreenSearch />
-          <main className="page">
-            {/* <div className="grid">
-              {cards.map((item) => (
-                <Card
-                  key={item.id}
-                  title={item.title}
-                  description={item.description}
-                  image={item.image}
-                />
-              ))}
-            </div> */}
-            {children}
-          </main>
-          <Footer />
+        <Navbar />
+        <OnScreenSearch />
+        <main className="page">
+          {children}
+        </main>
+        <Footer />
         </CartProvider>
       </body>
     </html>

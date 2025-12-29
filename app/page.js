@@ -1,8 +1,7 @@
 'use client'
-import Image from "next/image";
+
 import ProductCard from "../components/ProductCard";
-import {useState, useEffect} from 'react'
-import Carousel from "../components/Carousel";
+import {useState, useEffect} from 'react';
 
 const products = [
   { id: 1, name: "Laptop", price: 1200, max: 2, disabled: false },
