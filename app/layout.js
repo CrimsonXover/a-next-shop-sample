@@ -6,7 +6,6 @@ import Footer from "@/components/Footer";
 import { CartProvider } from "@/context/CartContext";
 import OnScreenSearch from "@/components/OnScreenSearch";
 
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

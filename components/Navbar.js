@@ -20,16 +20,16 @@ const Navbar = () => {
           <Link href="/pages/products" className={styles.navLink}>
             Products
           </Link>
-          <Link href="/deals" className={styles.navLink}>
+          <Link href="/pages/deals" className={styles.navLink}>
             Deals
           </Link>
-          <Link href="/about" className={styles.navLink}>
+          <Link href="/pages/about" className={styles.navLink}>
             About
           </Link>
-          <Link href="/blog" className={styles.navLink}>
+          <Link href="/pages/blog" className={styles.navLink}>
             Blog
           </Link>
-          <Link href="/contact" className={styles.navLink}>
+          <Link href="/pages/contact" className={styles.navLink}>
             Contact
           </Link>
         </div>
@@ -38,10 +38,10 @@ const Navbar = () => {
           <Link href="/search" className={styles.actionButton}>
             🔍
           </Link>
-          <Link href="/account" className={styles.actionButton}>
+          <Link href="/pages/account" className={styles.actionButton}>
             👤
           </Link>
-          <Link href="/cart" className={styles.cartButton}>
+          <Link href="/pages/cart" className={styles.cartButton}>
             🛒
             {cartCount > 0 && (
               <span className={styles.cartCount}>{cartCount}</span>

@@ -16,7 +16,7 @@ export default function Product({ product, disabled }) {
             <h3>{product.name}</h3>
             <p>${product.price}</p>
             <button onClick={handleAddToCart} disabled={disabled}>
-                Add to Cart
+            Add to Cart
             </button>
         </div>
     );

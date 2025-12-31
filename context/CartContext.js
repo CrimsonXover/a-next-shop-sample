@@ -35,9 +35,7 @@ export function CartProvider({ children }) {
             return[ ...prev ]
         });
     };
-    // {id = 1, name = "laptop",
-    //  id = 2, name = "phone",
-    // }
+
     const removeFromCart = (id) => {
         setCart ((prev) => {
             const existing = prev.find((item) => item.id === id);
