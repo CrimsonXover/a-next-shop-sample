@@ -1,6 +1,6 @@
 'use client'
 
-import ProductCard from '@/components/ProductCard';
+import ProductCard from '@/components/Cart/ProductCard';
 import { useState, useEffect } from 'react';
 
 const products = [
@@ -22,8 +22,8 @@ export default function Deals() {
   }, [cart]);
 
   return (
-    <div>
-      <h1>Products</h1>
+    <div className='grid'>
+      <h1>Deals</h1>
       {products.map((product) => (
         <ProductCard
           key={product.id}

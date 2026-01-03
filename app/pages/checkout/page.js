@@ -18,7 +18,7 @@ export default function CheckoutPage() {
     };
 
     return (
-        <div>
+        <div >
             <h1>Checkout</h1>
             {cart.map((item) => (
                 <p key={item.id}>
@@ -28,7 +28,7 @@ export default function CheckoutPage() {
 
             <h2>Total: ${total}</h2>
 
-            <button onClick={handleCheckout}>
+            <button className="card-btn" onClick={handleCheckout}>
                 Place Order
             </button>
         </div>

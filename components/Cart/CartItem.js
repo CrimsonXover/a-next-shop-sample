@@ -11,7 +11,7 @@ export default function CartItem({ item }) {
                 {item.name} * {item.quantity}
             </p>
             <p>${item.price * item.quantity}</p>
-            <button onClick={() => removeFromCart(item.id)}>Remove</button>
+            <button className="card-btn" onClick={() => removeFromCart(item.id)}>Remove</button>
         </div>
     );
 }

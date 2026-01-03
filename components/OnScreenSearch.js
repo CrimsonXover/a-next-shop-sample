@@ -12,7 +12,7 @@ export default function OnScreenSearch() {
 
   return (
     <div>
-      <input
+      <input className="card-title"
         type="text"
         placeholder="Search..."
         value={query}

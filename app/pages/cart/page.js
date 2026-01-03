@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link";
 import { useCart } from "@/context/CartContext";
-import CartItem from "@/components/CartItem";
+import CartItem from "@/components/Cart/CartItem";
 
 export default function CartPage() {
     const { cart } = useCart();
@@ -25,7 +25,7 @@ export default function CartPage() {
             <h2>Total: ${total}</h2>
 
             <Link href={"/pages/checkout"}>
-                <button>Proceed to Checkout</button>
+                <button className="card-btn" >Proceed to Checkout</button>
             </Link>
         </div>
     );

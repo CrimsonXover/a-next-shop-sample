@@ -1,8 +1,8 @@
 "use client"
 
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 import { CartProvider } from "@/context/CartContext";
 import OnScreenSearch from "@/components/OnScreenSearch";
 
