@@ -127,3 +127,16 @@ footer {
 .slide3 {
   background: #28a745;
 }
+
+/* ================================================================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
